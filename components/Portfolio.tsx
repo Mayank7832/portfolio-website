@@ -36,15 +36,17 @@ export default function Portfolio() {
       <Header />
       <Hero />
       <AboutSkills />
-      
+
       <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <p className="font-mono text-sm text-mint">experience</p>
-            <h2 className="mt-3 text-3xl font-semibold text-white">Professional Experience</h2>
+            <p className="font-mono text-sm text-mint">workbench</p>
+            {/* <h2 className="mt-3 text-3xl font-semibold text-white">Experience and projects as inspectable modules</h2> */}
           </div>
         </div>
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+
+        <h3 className="mt-10 font-mono text-xs text-amber uppercase tracking-wider">Professional Experience</h3>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {experienceCards.map((card) => (
             <button
               key={`${card.eyebrow}-${card.title}`}
@@ -60,16 +62,9 @@ export default function Portfolio() {
             </button>
           ))}
         </div>
-      </section>
 
-      <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 border-t border-line/50">
-        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <div>
-            <p className="font-mono text-sm text-mint">projects</p>
-            <h2 className="mt-3 text-3xl font-semibold text-white">Featured Projects</h2>
-          </div>
-        </div>
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <h3 className="mt-14 font-mono text-xs text-amber uppercase tracking-wider border-t border-line/50 pt-8">Featured Projects</h3>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {projectCards.map((card) => (
             <button
               key={`${card.eyebrow}-${card.title}`}
