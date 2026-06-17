@@ -43,7 +43,6 @@ export default function Portfolio() {
             <p className="font-mono text-sm text-mint">experience</p>
             <h2 className="mt-3 text-3xl font-semibold text-white">Professional Experience</h2>
           </div>
-          <p className="max-w-sm font-mono text-sm leading-6 text-slate-400">Click any position for a detailed overview.</p>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {experienceCards.map((card) => (
@@ -69,7 +68,6 @@ export default function Portfolio() {
             <p className="font-mono text-sm text-mint">projects</p>
             <h2 className="mt-3 text-3xl font-semibold text-white">Featured Projects</h2>
           </div>
-          <p className="max-w-sm font-mono text-sm leading-6 text-slate-400">Click any project for a focused view of its system design.</p>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {projectCards.map((card) => (
