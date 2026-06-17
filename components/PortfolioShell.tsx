@@ -87,7 +87,7 @@ export function AboutSkills() {
     <section className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr]">
       <div>
         <p className="font-mono text-sm text-mint">about</p>
-        <h2 className="mt-3 text-3xl font-semibold text-white">Engineering Profile</h2>
+        <h2 className="mt-3 text-3xl font-semibold text-white">About Me</h2>
         <p className="mt-5 leading-8 text-slate-300">{portfolio.profile.bio}</p>
         <div className="mt-6 grid gap-3 font-mono text-sm text-slate-300">
           <span className="flex items-center gap-2"><MapPin size={15} className="text-cyan" /> {portfolio.profile.location}</span>
