@@ -1,0 +1,91 @@
+{
+  "profile": {
+    "name": "Mayank Chopra",
+    "title": "Software Development Engineer",
+    "location": "Mumbai, India",
+    "email": "mayankchopra7832@gmail.com",
+    "phone": "+91 75064 99595",
+    "linkedin": "https://www.linkedin.com/in/chopra-mayank/",
+    "github": "https://github.com/Mayank7832/",
+    "resume": "/MayankChopra-Resume.pdf",
+    "tagline": "I build reliable backend platforms, cloud-native services, and practical frontend experiences across enterprise and startup environments.",
+    "bio": "Software Development Engineer at Fynd with prior BFSI experience at Barclays Global Service Center. My background spans Java, React, microservices, REST APIs, CI/CD, OpenShift, Kafka, secure engineering practices, and the pace of startup-driven product development."
+  },
+  "experience": [
+    {
+      "company": "Fynd",
+      "role": "Software Development Engineer - 1",
+      "location": "Mumbai, Maharashtra, India · Hybrid",
+      "period": "Mar 2026 - Present",
+      "summary": "Working as an SDE-1 in a startup-driven engineering environment focused on rapid development, innovation, and continuous technical growth.",
+      "highlights": [
+        "Joined Fynd as a Software Development Engineer after transitioning from the BFSI domain into a product-led startup environment.",
+        "Bringing a security and compliance mindset from enterprise banking systems into faster-moving development workflows.",
+        "Focused on learning, adapting, and building in an environment that emphasizes rapid iteration and innovation."
+      ],
+      "stack": ["Software Development", "Product Engineering", "Rapid Development", "Startup Engineering"]
+    },
+    {
+      "company": "Barclays Global Service Center Pvt Ltd",
+      "role": "Software Engineer",
+      "location": "Hybrid",
+      "period": "Jul 2023 - Feb 2026",
+      "summary": "Built enterprise notification platforms, micro frontends, secure runtime libraries, and CI/CD foundations for containerized applications.",
+      "highlights": [
+        "Designed and re-implemented an event-driven notifications platform using REST APIs, SQL, microservices, and Kafka-based retries to process 250K+ notifications monthly.",
+        "Developed modular React.js UI components inside a Micro Frontend architecture for a legacy enterprise application.",
+        "Engineered password rotation for 20+ containerized applications on OpenShift with a modular runtime credential library and zero downtime.",
+        "Remediated vulnerabilities across 30+ microservices using Veracode, SonarQube, Prisma, and secure coding fixes, reducing reported security issues by 90%.",
+        "Developed and maintained Jenkins, Maven, and Kubernetes CI/CD pipelines for automated builds and cloud-native deployments.",
+        "Improved code quality with JUnit and Mockito, supported Java 8 to 21 migration, upgraded Docker images, and monitored systems with the ELK Stack."
+      ],
+      "stack": ["Java", "React", "Kafka", "OpenShift", "Kubernetes", "Jenkins", "SQL", "ELK"]
+    },
+    {
+      "company": "One Percent Ltd",
+      "role": "Mobile App Developer Intern",
+      "location": "Remote",
+      "period": "Jan 2022 - Feb 2022",
+      "summary": "Built Flutter learning experiences backed by database content and REST API integrations.",
+      "highlights": [
+        "Designed and developed a Flutter tutorials app UI for streaming video lessons and accessing PDF materials from a backend database.",
+        "Added support for 15+ research paper categories and integrated a news feed through an existing REST API, improving content variety and engagement."
+      ],
+      "stack": ["Flutter", "Dart", "REST APIs", "Firebase"]
+    }
+  ],
+  "education": [
+    {
+      "school": "K.J. Somaiya College of Engineering",
+      "degree": "B.Tech. in Computer Engineering",
+      "period": "2019 - 2023",
+      "detail": "CGPA: 9.27 / 10.0"
+    }
+  ],
+  "projects": [
+    {
+      "name": "StockRack",
+      "type": "Django + MySQL portfolio tracker",
+      "summary": "A stock holdings dashboard with user login, REST APIs, transaction tracking, filters, visual insights, and backend error handling through custom middleware.",
+      "stack": ["Django", "MySQL", "REST APIs", "Authentication", "Dashboards"]
+    },
+    {
+      "name": "Glance",
+      "type": "Photo sharing application",
+      "summary": "An Angular, Spring Boot, and SQL Server app for uploading, managing, and sharing pictures with authentication, REST APIs, fast uploads, secure storage, and streamlined UI logic.",
+      "stack": ["Angular", "Spring Boot", "SQL Server", "REST APIs", "Authentication"]
+    }
+  ],
+  "skills": {
+    "Languages": ["Java", "Python", "C++", "JavaScript", "SQL", "Dart"],
+    "Frameworks": ["Django", "Spring Boot", "Node.js", "Flutter", "React"],
+    "Databases": ["MySQL", "SQL Server", "MongoDB"],
+    "Tools": ["Git", "Docker", "Jenkins", "Kubernetes", "OpenShift", "Kafka", "Firebase", "Veracode", "ELK Stack"],
+    "Concepts": ["REST APIs", "SOAP", "Microservices", "CI/CD Pipelines", "Micro Frontend Architecture"]
+  },
+  "source": {
+    "resumePdf": "MayankChopra-Resume.pdf",
+    "linkedinUrlExtractedFromPdf": "https://www.linkedin.com/in/chopra-mayank/",
+    "linkedinNote": "The PDF contained the LinkedIn profile URL. Portfolio content combines the resume PDF with the user-provided Mayank Chopra LinkedIn post announcing his Mar 2026 Fynd SDE-1 role."
+  }
+}
