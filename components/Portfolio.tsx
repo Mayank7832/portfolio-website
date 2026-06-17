@@ -14,22 +14,21 @@ type ModalItem = {
 
 export default function Portfolio() {
   const [modal, setModal] = useState<ModalItem | null>(null);
-  const cards: ModalItem[] = [
-    ...portfolio.experience.map((job) => ({
-      title: job.role,
-      eyebrow: `${job.company} / ${job.period}`,
-      summary: job.summary,
-      details: job.highlights,
-      stack: job.stack
-    })),
-    ...portfolio.projects.map((project) => ({
-      title: project.name,
-      eyebrow: project.type,
-      summary: project.summary,
-      details: [project.summary],
-      stack: project.stack
-    }))
-  ];
+  const experienceCards: ModalItem[] = portfolio.experience.map((job) => ({
+    title: job.role,
+    eyebrow: `${job.company} / ${job.period}`,
+    summary: job.summary,
+    details: job.highlights,
+    stack: job.stack
+  }));
+
+  const projectCards: ModalItem[] = portfolio.projects.map((project) => ({
+    title: project.name,
+    eyebrow: project.type,
+    summary: project.summary,
+    details: [project.summary],
+    stack: project.stack
+  }));
 
   return (
     <main className="relative overflow-hidden">
@@ -37,16 +36,43 @@ export default function Portfolio() {
       <Header />
       <Hero />
       <AboutSkills />
+      
       <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <p className="font-mono text-sm text-mint">workbench</p>
-            <h2 className="mt-3 text-3xl font-semibold text-white">Experience and projects as inspectable modules</h2>
+            <p className="font-mono text-sm text-mint">experience</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">Professional Experience</h2>
           </div>
-          <p className="max-w-sm font-mono text-sm leading-6 text-slate-400">Click any module for a focused modal view.</p>
+          <p className="max-w-sm font-mono text-sm leading-6 text-slate-400">Click any position for a detailed overview.</p>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {cards.map((card) => (
+          {experienceCards.map((card) => (
+            <button
+              key={`${card.eyebrow}-${card.title}`}
+              className="group min-h-56 rounded-md border border-line bg-panel/82 p-5 text-left shadow-terminal transition hover:-translate-y-1 hover:border-cyan/60"
+              onClick={() => setModal(card)}
+            >
+              <span className="font-mono text-xs text-amber">{card.eyebrow}</span>
+              <span className="mt-3 block text-xl font-semibold text-white">{card.title}</span>
+              <span className="mt-4 line-clamp-4 block leading-7 text-slate-300">{card.summary}</span>
+              <span className="mt-5 inline-flex items-center gap-2 font-mono text-sm text-mint">
+                Inspect <ExternalLink size={14} />
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 border-t border-line/50">
+        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+          <div>
+            <p className="font-mono text-sm text-mint">projects</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">Featured Projects</h2>
+          </div>
+          <p className="max-w-sm font-mono text-sm leading-6 text-slate-400">Click any project for a focused view of its system design.</p>
+        </div>
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {projectCards.map((card) => (
             <button
               key={`${card.eyebrow}-${card.title}`}
               className="group min-h-56 rounded-md border border-line bg-panel/82 p-5 text-left shadow-terminal transition hover:-translate-y-1 hover:border-cyan/60"
