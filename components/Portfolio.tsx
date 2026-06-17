@@ -39,7 +39,7 @@ export default function Portfolio() {
 
       <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div>
-          <p className="font-mono text-sm text-mint">experience</p>
+          <p className="font-mono text-sm text-mint">workbench</p>
           <h2 className="mt-3 text-3xl font-semibold text-white">Professional Experience</h2>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -60,7 +60,7 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-16 border-t border-line/50 pt-10">
-          <p className="font-mono text-sm text-mint">projects</p>
+          {/* <p className="font-mono text-sm text-mint">projects</p> */}
           <h2 className="mt-3 text-3xl font-semibold text-white">Featured Projects</h2>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
